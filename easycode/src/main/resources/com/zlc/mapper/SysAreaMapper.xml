@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlc.mapper.SysAreaMapper">
+
+    <resultMap id="BaseResultMap" type="com.zlc.domain.SysArea">
+            <id property="id" column="id" />
+            <result property="code" column="code" />
+            <result property="name" column="name" />
+            <result property="parentid" column="parentId" />
+            <result property="level" column="level" />
+            <result property="type" column="type" />
+            <result property="servicestate" column="servicestate" />
+            <result property="deleteFlag" column="delete_flag" />
+            <result property="region" column="region" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,code,name,parentId,level,type,
+        servicestate,delete_flag,region
+    </sql>
+</mapper>

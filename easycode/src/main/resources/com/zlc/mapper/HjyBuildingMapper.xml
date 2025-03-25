@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zlc.mapper.HjyBuildingMapper">
+
+    <resultMap id="BaseResultMap" type="com.zlc.domain.HjyBuilding">
+            <result property="buildingId" column="building_id" />
+            <result property="buildingName" column="building_name" />
+            <result property="buildingCode" column="building_code" />
+            <result property="buildingAcreage" column="building_acreage" />
+            <result property="communityId" column="community_id" />
+            <result property="createBy" column="create_by" />
+            <result property="createTime" column="create_time" />
+            <result property="updateBy" column="update_by" />
+            <result property="updateTime" column="update_time" />
+            <result property="remark" column="remark" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        building_id,building_name,building_code,building_acreage,community_id,create_by,
+        create_time,update_by,update_time,remark
+    </sql>
+</mapper>
